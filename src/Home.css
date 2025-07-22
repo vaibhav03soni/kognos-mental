@@ -1,0 +1,57 @@
+/* ...existing code... */
+#welcome-section {
+  background-color: #f4f4f4;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#welcome-text {
+  flex: 1 1 300px;
+}
+
+#welcome-text h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+#welcome-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+#welcome-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  #welcome-section {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  #welcome-text h2 {
+    font-size: 1.5rem;
+  }
+  #welcome-image img {
+    border-radius: 12px;
+  }
+}
