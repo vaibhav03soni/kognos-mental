@@ -22,7 +22,7 @@ export default function App() {
    <Service/>
    <Testimonials/>
    <Partners/>
-   <Testimonials/>
+   
    <Resources/>
    <TherapySection/>
   
