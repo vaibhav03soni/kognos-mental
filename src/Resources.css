@@ -1,0 +1,71 @@
+.resources-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f8f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.resources-header .small-title {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.resources-header h2 {
+  font-size: 32px;
+  color: #1f2937;
+  margin: 10px 0;
+}
+
+.resources-header .subtext {
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+.resources-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.resource-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.resource-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.resource-card p {
+  color: #4b5563;
+  font-size: 14px;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.explore-button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #4338ca;
+}

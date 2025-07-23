@@ -1,30 +1,23 @@
 import React from 'react';
 import './About.css';
 
-export default function About() {
-  return (
-    <section id="about-section">
-      <div className="about-left">
-        <p className="about-subtitle">HOW IT WORKS</p>
-        <h1 className="about-title">
-          We Help You<br />
-          Prioritize Your<br />
-          Mental Health
-        </h1>
-        <p className="about-description">
-          Browse therapists, book a session, and<br />
-          start your healing journey with trusted<br />
-          professionals.
-        </p>
-        <button className="about-btn">Find A Therapist</button>
-      </div>
 
-      <div className="about-right">
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/035/104/921/non_2x/woman-feeling-of-depression-for-mental-health-concept-illustration-vector.jpg"
-          alt="Mental Health"
-        />
+const About = () => {
+  return (
+    <section id="mental-health">
+      <div className="mental-health-text">
+        <p className="subheading">HOW IT WORKS</p>
+        <h1>We Help You<br />Prioritize Your<br />Mental Health</h1>
+        <p className="description">
+          Browse therapists, book a session, and start your healing journey with trusted professionals.
+        </p>
+        <button className="cta-btn">Find A Therapist</button>
+      </div>
+      <div className="mental-health-image">
+        <img src='https://3.files.edl.io/10ec/20/10/19/162749-95b87ddf-eae5-436c-a278-06f1bbba1019.jpg' alt="Mental Health" />
       </div>
     </section>
   );
-}
+};
+
+export default About;

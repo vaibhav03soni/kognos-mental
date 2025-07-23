@@ -1,113 +1,7 @@
-.wellbeing-container {
+#wellbeing-container {
   font-family: 'Inter', sans-serif;
   padding: 40px 20px;
   background-color: #f7f7fa;
-}
-
-/* Partner Section */
-.partner-section {
-  background: white;
-  border-radius: 30px;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  width: 80%;
-  margin: 0 auto 40px auto;
-  height: 50px
-}
-
-.partner-title {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.partner-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-.partner-logos img {
-  height: auto;
-  width: 100px;
-  object-fit: contain;
-}
-
-/* Resources */
-.resources-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #0079a1;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.resources-header h2 {
-  font-size: 28px;
-  color: #002c3e;
-  margin-bottom: 10px;
-}
-
-.resources-header p {
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 16px;
-}
-
-.resources-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 60px;
-}
-
-.resource-card {
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
-  width: 100%;
-  max-width: 240px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}
-
-.resource-card h3 {
-  font-size: 18px;
-  color: #00343e;
-  margin-bottom: 10px;
-}
-
-.resource-card p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.explore-btn {
-  background-color: #4452fe;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.explore-btn:hover {
-  background-color: #2f3ad6;
 }
 
 /* Community Section */
@@ -120,12 +14,14 @@
   padding: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   gap: 30px;
+  justify-content: center;
 }
 
+/* Text Content */
 .community-content {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 300px;
   padding: 20px;
+  max-width: 600px;
 }
 
 .community-content h2 {
@@ -149,75 +45,53 @@
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .community-btn:hover {
   background-color: #2f3ad6;
 }
 
+/* Image Section */
 .community-image {
-  flex: 1;
-  min-width: 280px;
+  flex: 1 1 300px;
   text-align: center;
 }
 
 .community-image img {
   max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 12px;
+  height: auto;
 }
 
-/* ---------- Responsive Styles ---------- */
+/* Tablet Devices */
 @media (max-width: 992px) {
-  .partner-section {
-    width:90%;
-  }
-
-  .resources-header h2 {
-    font-size: 24px;
-  }
-
-  .resources-header p {
-    font-size: 14px;
-  }
-
-  .resource-card {
-    max-width: 45%;
-  }
-}
-
-@media (max-width: 768px) {
-  .resource-card {
-    max-width: 100%;
-  }
-
-  .community-section {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .community-content,
-  .community-image {
-    width: 100%;
-    text-align: center;
-  }
-
-  .resources-header h2 {
+  .community-content h2 {
     font-size: 22px;
   }
 
-  .partner-section {
-    width: 100%;
-    margin-left: 0;
+  .community-content p {
+    font-size: 14px;
+  }
+
+  .community-btn {
+    font-size: 13px;
+    padding: 10px 22px;
   }
 }
 
-@media (max-width: 480px) {
-  .resources-header h2 {
-    font-size: 20px;
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .community-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
   }
 
-  .resources-header p {
-    font-size: 13px;
+  .community-content {
+    padding: 10px;
   }
 
   .community-content h2 {
@@ -225,11 +99,18 @@
   }
 
   .community-content p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .explore-btn,
   .community-btn {
     width: 100%;
+    max-width: 250px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .community-image img {
+    max-width: 90%;
+    margin-top: 20px;
   }
 }

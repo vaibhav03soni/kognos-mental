@@ -1,0 +1,108 @@
+#therapy-section {
+  background-image: url('./images/Mental-Health-Is-a-Universal-Human-Right-What-Does-That-Mean.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.overlay ul {
+  list-style: disc;
+  text-align: left;
+  margin: 0 auto 40px;
+  max-width: 700px;
+  padding-left: 20px;
+}
+
+.overlay ul li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.login-btn {
+  background-color: #1411d7;
+  color: #000;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #23115f;
+}
+
+/* Tablets (width ≤ 992px) */
+@media (max-width: 992px) {
+  .overlay {
+    padding: 50px 25px;
+  }
+
+  .overlay h1 {
+    font-size: 30px;
+  }
+
+  .overlay ul li {
+    font-size: 16px;
+  }
+
+  .login-btn {
+    font-size: 15px;
+    padding: 12px 28px;
+  }
+}
+
+/* Mobile (width ≤ 600px) */
+@media (max-width: 600px) {
+  #therapy-section {
+    padding: 80px 15px;
+  }
+
+  .overlay {
+    padding: 40px 20px;
+  }
+
+  .overlay h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .overlay ul {
+    padding-left: 16px;
+    margin-bottom: 30px;
+  }
+
+  .overlay ul li {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .login-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 280px;
+  }
+}

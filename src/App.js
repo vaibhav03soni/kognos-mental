@@ -8,6 +8,11 @@ import ContactSection from './ContactSection'; //
 import FAQSection from './FAQSection'; // Importing the FAQ section
 import WellBeingResources from './WellBeingResources';// Importing the services component
 import Testimonials from './Testimonals';
+import Resources from './Resources'; // Importing the Resources component
+import Partners from './Partners';
+import TherapySection from './Therapysection';
+// Importing the Therapy section
+// Importing the Therapy section
 export default function App() {
   return (
     <div>
@@ -16,6 +21,11 @@ export default function App() {
     <About/>
    <Service/>
    <Testimonials/>
+   <Partners/>
+   <Testimonials/>
+   <Resources/>
+   <TherapySection/>
+  
    <WellBeingResources/>
    <FAQSection/>
     <ContactSection/>
